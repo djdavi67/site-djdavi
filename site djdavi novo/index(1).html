@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ Davi | DJ para Casamentos, Festas e Eventos em Nova Mutum</title>
+  <meta name="description" content="DJ Davi em Nova Mutum-MT para casamentos, aniversários, 15 anos e eventos. DJ Open Format, som e iluminação. Consulte sua data pelo WhatsApp.">
+  <meta name="theme-color" content="#0a0a0f">
+
+  <!-- Google tag (gtag.js) - Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17012949214"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17012949214');
+  </script>
+  
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Reset & Variáveis */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --bg-dark: #0a0a0f;
+      --card-bg: #14141e;
+      --accent-color: #ff0055;
+      --accent-hover: #d60047;
+      --text-main: #f1f1f5;
+      --text-muted: #a0a0b0;
+      --gold: #ffb703;
+    }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Utilitários */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .section-padding {
+      padding: 80px 0;
+    }
+    .title-center {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .title-center h2 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .title-center p {
+      color: var(--accent-color);
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Menu / Nav */
+    nav {
+      background: rgba(10, 10, 15, 0.95);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      border-bottom: 1px solid #1a1a26;
+      backdrop-filter: blur(10px);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    .logo span {
+      color: var(--accent-color);
+    }
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(180deg, rgba(10,10,15,0.4) 0%, rgba(10,10,15,1) 100%), url('Gemini_Generated_Image_.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding-top: 70px;
+    }
+    .hero-content {
+      max-width: 800px;
+    }
+    .hero-badge {
+      background: rgba(255, 0, 85, 0.2);
+      color: var(--accent-color);
+      border: 1px solid var(--accent-color);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 35px;
+    }
+    .btn-primary {
+      background: var(--accent-color);
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-block;
+      transition: 0.3s;
+      box-shadow: 0 5px 20px rgba(255, 0, 85, 0.4);
+    }
+    .btn-primary:focus-visible, .btn-float-whatsapp:focus-visible, .nav-links a:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 4px;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Números de Destaque */
+    .stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 50px;
+      border-top: 1px solid #222230;
+      padding-top: 30px;
+    }
+    .stat-item h3 {
+      font-size: 2rem;
+      color: #fff;
+    }
+    .stat-item p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    /* Serviços */
+    .grid-services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .card-service {
+      background: var(--card-bg);
+      padding: 35px 25px;
+      border-radius: 12px;
+      border: 1px solid #202030;
+      transition: 0.3s;
+    }
+    .card-service:hover {
+      border-color: var(--accent-color);
+      transform: translateY(-5px);
+    }
+    .card-service h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+    .card-service p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Galeria & Vídeo */
+    .grid-media {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+    .media-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #202030;
+    }
+    .media-card img, .media-card video {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+    .media-card video {
+      object-fit: contain;
+      background: #000;
+    }
+    .media-info {
+      padding: 20px;
+    }
+    .media-info h4 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    .media-info p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Depoimentos */
+    .grid-testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .testimonial-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 25px;
+      border: 1px solid #202030;
+    }
+    .testimonial-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .stars {
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    /* FAQ */
+    .faq-item {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+      border: 1px solid #202030;
+    }
+    .faq-item h4 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .faq-item p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Floating WhatsApp Button */
+    .btn-float-whatsapp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25d366;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      box-shadow: 0 5px 25px rgba(37, 211, 102, 0.5);
+      z-index: 9999;
+      transition: 0.3s;
+    }
+    .btn-float-whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #050508;
+      border-top: 1px solid #1a1a26;
+      padding: 40px 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.1rem; }
+      .nav-links { display: none; }
+      .stats { flex-direction: column; gap: 20px; }
+      .btn-primary { padding: 14px 22px; }
+      .btn-float-whatsapp { right: 18px; bottom: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <div class="container nav-container">
+      <div class="logo">DJ <span>DAVI</span></div>
+      <ul class="nav-links">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
+      </ul>
+      <a href="https://wa.me/5565996509224" target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento com DJ Davi pelo WhatsApp" class="btn-primary" style="padding: 10px 22px; font-size: 0.85rem;">Orçamento</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Capa) -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge">Open Format DJ & Sound Experience</span>
+        <h1>Sua festa não é apenas um evento. É A FESTA.</h1>
+        <p>Transformo momentos especiais em pistas de dança inesquecíveis. Sonorização de alta fidelidade, iluminação cênica de alto impacto e leitura de pista precisa para manter seus convidados empolgados do início ao fim.</p>
+        <a href="https://wa.me/5565996509224" target="_blank" rel="noopener noreferrer" aria-label="Consultar disponibilidade de data com DJ Davi pelo WhatsApp" class="btn-primary">Consultar Minha Data no WhatsApp</a>
+
+        <div class="stats">
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Pista Animada</p>
+          </div>
+          <div class="stat-item">
+            <h3>Repertório</h3>
+            <p>Sob Medida para Você</p>
+          </div>
+          <div class="stat-item">
+            <h3>Estrutura</h3>
+            <p>Som & Luz de Alta Performance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Seção Serviços -->
+  <section id="servicos" class="section-padding">
+    <div class="container">
+      <div class="title-center">
+        <p>Especialidades</p>
+        <h2>O Show Perfeito Para Seu Evento</h2>
+      </div>
+      <div class="grid-services">
+        <div class="card-service">
+          <h3>Casamentos</h3>
+          <p>Trilha sonora completa para cerimônia e recepção, com leitura de pista refinada para manter convidados de todas as idades dançando.</p>
+        </div>
+        <div class="card-service">
+          <h3>Aniversários & 15 Anos</h3>
+          <p>Sets modernos com os maiores hits do momento, iluminação cênica e alta energia do início ao fim da festa.</p>
+        </div>
+        <div class="card-service">
+          <h3>Eventos Corporativos</h3>
+          <p>Sonorização e ambientação profissional adaptada ao perfil da sua empresa e do seu público-alvo.</p>
+        </div>
+        <div class="card-service">
+          <h3>Open Format Flexível</h3>
+          <p>Mixagem ao vivo passando pelos melhores estilos musicais, ajustando o ritmo de acordo com a vibe do momento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria de Fotos e Vídeo -->
+  <section id="galeria" class="section-padding" style="background: #0e0e15;">
+    <div class="container">
+      <div class="title-center">
+        <p>Estrutura & Performance</p>
+        <h2>Veja o DJ Davi em Ação</h2>
+      </div>
+      
+      <div class="grid-media">
+        <!-- Foto 1 -->
+        <div class="media-card">
+          <img src="Gemini_Generated_Image_.png" alt="DJ Davi no comando do evento">
+          <div class="media-info">
+            <h4>Presença & Elegância</h4>
+            <p>Postura profissional e ambientação impecável para o seu evento.</p>
+          </div>
+        </div>
+
+        <!-- Foto 2 (Pista) -->
+        <div class="media-card">
+          <img src="pista-ao-vivo.jpg" alt="Pista de dança ao vivo">
+          <div class="media-info">
+            <h4>Pista de Dança ao Vivo</h4>
+            <p>Estrutura completa com mesa Pioneer, notebook e iluminação de pista.</p>
+          </div>
+        </div>
+
+        <!-- Vídeo -->
+        <div class="media-card">
+          <video controls poster="Gemini_Generated_Image_.png">
+            <source src="SaveClip.App_AQMwIOCL--6vYTxqHYENpla1msjSZG2VhPmAXUtL7xqPktK_El8MT6nAA9PpY8tLEHbSAIWNpqXyd0YPkkZ9_zX4zVemi-ShSMX7ABE.mp4" type="video/mp4">
+          </video>
+          <div class="media-info">
+            <h4>Momentos Inesquecíveis (Vídeo)</h4>
+            <p>Confira a energia real da pista de dança nos nossos eventos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos Real dos Clientes -->
+  <section id="depoimentos" class="section-padding">
+    <div class="container">
+      <div class="title-center">
+        <p>Prova Social</p>
+        <h2>O Que Dizem Nossos Clientes</h2>
+      </div>
+
+      <div class="grid-testimonials">
+        <!-- Print 1: Paula Amaral -->
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <img src="IMG_20260809_144901.jpg" alt="Depoimento Paula Amaral">
+          <p><em>"Passando só para agradecer pela festa! Foi incrível! Meus convidados ficaram extremamente impressionados..."</em></p>
+        </div>
+
+        <!-- Print 2: Feedback Noivos -->
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <img src="SaveClip.App_272772651_335950605088598_3765667392304540399_n.jpg" alt="Depoimento Cliente WhatsApp">
+          <p><em>"David você foi sensacional! Superou todas as expectativas. Não teve quem não amou o DJ..."</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perguntas Frequentes (FAQ) -->
+  <section id="faq" class="section-padding" style="background: #0e0e15;">
+    <div class="container" style="max-width: 800px;">
+      <div class="title-center">
+        <p>Tire Suas Dúvidas</p>
+        <h2>Perguntas Frequentes</h2>
+      </div>
+
+      <div class="faq-item">
+        <h4>Como funciona a escolha do repertório musical?</h4>
+        <p>O repertório é 100% personalizado conforme o seu gosto. Alinhamos previamente as músicas indispensáveis e também o que não deve tocar de jeito nenhum.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Você leva os equipamentos de som e iluminação?</h4>
+        <p>Sim! Trabalhamos com estrutura completa de sonorização profissional, mesa de DJ, iluminação de pista e iluminação cênica de alta performance.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>Como faço para garantir a minha data na agenda?</h4>
+        <p>A reserva da data é feita mediante contrato formal após o primeiro contato via WhatsApp e alinhamento dos detalhes do evento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="section-padding" style="text-align: center; background: linear-gradient(180deg, #0e0e15 0%, #17000d 100%);">
+    <div class="container">
+      <h2 style="font-size: 2.2rem; margin-bottom: 15px;">Sua data está disponível? Consulte agora.</h2>
+      <p style="color: var(--text-muted); margin-bottom: 30px;">As datas de fim de semana costumam esgotar com antecedência. Consulte a sua data agora!</p>
+      <a href="https://wa.me/5565996509224" target="_blank" rel="noopener noreferrer" aria-label="Falar com DJ Davi pelo WhatsApp" class="btn-primary">Falar com DJ Davi no WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; DJ Davi - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5565996509224" target="_blank" rel="noopener noreferrer" aria-label="Falar com DJ Davi pelo WhatsApp" class="btn-float-whatsapp" title="Falar no WhatsApp">
+    💬
+  </a>
+
+
+  <script>
+    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function(link) {
+      link.addEventListener('click', function() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'whatsapp_click', {
+            event_category: 'contact',
+            event_label: this.textContent.trim() || 'WhatsApp'
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
